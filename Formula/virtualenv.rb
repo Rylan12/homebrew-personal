@@ -5,6 +5,13 @@ class Virtualenv < Formula
   sha256 "a5e0d253fe138097c6559c906c528647254f437d1019af9d5a477b09bfa7300f"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/Rylan12/homebrew-personal/releases/download/virtualenv-20.0.33"
+    cellar :any_skip_relocation
+    sha256 "f1b8dfecaf0ce0d4bb8ded0ff939534bf71a63c162b1694520e60954b2c244fa" => :catalina
+    sha256 "122f45a4ab66a1471df25f3cf6c1e4216ef74652da5822cba69ceb7a76a59704" => :x86_64_linux
+  end
+
   depends_on "python@3.9"
 
   resource "appdirs" do

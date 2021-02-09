@@ -1,15 +1,14 @@
 class Virtualenv < Formula
   desc "Tool for creating isolated virtual python environments"
   homepage "https://virtualenv.pypa.io"
-  url "https://files.pythonhosted.org/packages/49/63/8e16d7f59ec7be34fbf57f9935e3ce1ab8b96cb6f1609ff30f16bbe7cf0d/virtualenv-20.2.1.tar.gz"
-  sha256 "e0aac7525e880a429764cefd3aaaff54afb5d9f25c82627563603f5d7de5a6e5"
+  url "https://files.pythonhosted.org/packages/79/64/203241c2e2b5abfd5edca4e28242c21bf8a9e84490873e4a8a155a9658fc/virtualenv-20.4.2.tar.gz"
+  sha256 "147b43894e51dd6bba882cf9c282447f780e2251cd35172403745fc381a0a80d"
   license "MIT"
 
   bottle do
     root_url "https://github.com/Rylan12/homebrew-personal/releases/download/virtualenv-20.2.1"
-    cellar :any_skip_relocation
-    sha256 "3d0ef413d2d821b13b7138288337dd4622de18f7be21ed629331ef057f27bea8" => :catalina
-    sha256 "61bbc4cfaf567a109b50975503afbf90559eefbc47fe45065dd9dac606579f8f" => :x86_64_linux
+    sha256 cellar: :any_skip_relocation, catalina:     "3d0ef413d2d821b13b7138288337dd4622de18f7be21ed629331ef057f27bea8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "61bbc4cfaf567a109b50975503afbf90559eefbc47fe45065dd9dac606579f8f"
   end
 
   depends_on "python@3.9"

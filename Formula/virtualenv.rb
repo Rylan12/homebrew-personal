@@ -6,9 +6,9 @@ class Virtualenv < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/Rylan12/homebrew-personal/releases/download/virtualenv-20.2.1"
-    sha256 cellar: :any_skip_relocation, catalina:     "3d0ef413d2d821b13b7138288337dd4622de18f7be21ed629331ef057f27bea8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "61bbc4cfaf567a109b50975503afbf90559eefbc47fe45065dd9dac606579f8f"
+    root_url "https://github.com/Rylan12/homebrew-personal/releases/download/virtualenv-20.4.2"
+    sha256 cellar: :any_skip_relocation, catalina:     "615d952026f243a5ba54a63443ca6a3c6361a304b14e9b162622049003a06c90"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "171f9d8881b696ab190c4454b648293243dfccc6116af567287e624586617d53"
   end
 
   depends_on "python@3.9"

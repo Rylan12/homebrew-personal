@@ -6,8 +6,6 @@ class ArcheyMacos < Formula
   license "GPL-2.0-or-later"
   head "https://github.com/Rylan12/archey-osx"
 
-  bottle :unneeded
-
   depends_on "jq"
 
   conflicts_with "archey", because: "both install an `archey` binary"

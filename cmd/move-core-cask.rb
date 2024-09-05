@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "tap"
+
 module Homebrew
   module_function
 

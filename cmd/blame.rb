@@ -11,11 +11,11 @@ module Homebrew
         Show `git blame` output of a <formula> or <cask>.
       EOS
       flag "-L", "--lines=",
-           description: "Annotate only the given line range. "\
-                        "`-L <line>` will annotate only the given line number. "\
-                        "`-L <start>``,<end>` will annotate from <start> to <end>. "\
-                        "Leave either <start> or <end> blank (keeping the comma) "\
-                        "to annotate from the first line to <end> or from <start> "\
+           description: "Annotate only the given line range. " \
+                        "`-L <line>` will annotate only the given line number. " \
+                        "`-L <start>``,<end>` will annotate from <start> to <end>. " \
+                        "Leave either <start> or <end> blank (keeping the comma) " \
+                        "to annotate from the first line to <end> or from <start> " \
                         "to the last line respectively."
       named_args min: 1, max: 2
     end
@@ -26,7 +26,7 @@ module Homebrew
 
     # As this command is simplifying user-run commands then let's just use a
     # user path, too.
-    ENV["PATH"] = ENV["HOMEBREW_PATH"]
+    ENV["PATH"] = ENV.fetch("HOMEBREW_PATH", nil)
 
     name, revision = args.named
     formula_path = Formulary.path name

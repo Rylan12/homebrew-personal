@@ -25,6 +25,13 @@ class Actflow < Formula
     system "./build"
   end
 
+  def caveats
+    <<~EOS
+      Add the following to your shell profile e.g. ~/.profile or ~/.zshrc:
+        export ACT_HOME=#{opt_prefix}
+    EOS
+  end
+
   test do
     ENV["ACT_HOME"] = prefix
 

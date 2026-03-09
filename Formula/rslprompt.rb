@@ -1,8 +1,8 @@
 class Rslprompt < Formula
   desc "Fast, async zsh shell prompt"
   homepage "https://github.com/Rylan12/rslprompt"
-  url "https://github.com/Rylan12/rslprompt/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "086971b97b13c1afe3d807f618d66864e9b9def3adb521ea94189011c53602e2"
+  url "https://github.com/Rylan12/rslprompt/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "6089bc192696cd02de280286bff73bf18248f0afd0875823517ba3a556ad1e09"
   license "MIT"
 
   bottle do

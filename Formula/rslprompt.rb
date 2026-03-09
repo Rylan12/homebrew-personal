@@ -7,8 +7,8 @@ class Rslprompt < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/rylan12/personal"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e638ae9990b7ff4416a95d2a3f1fb03e81ee410c4444daadc34b58e9c4b0a48a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9434645ba4440078351117e6dea6a60047304aec179576e9602c4c5e167fd6f8"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "cc414875b8816c9d966072d0ce0e54a85ed21c0e1b3ffa0f50c01151241067a2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7b0c8a65f3df05e08936ed86e29302f7b0888dfbaf17fd7c2a2ff6d15228facb"
   end
 
   depends_on "rust" => :build

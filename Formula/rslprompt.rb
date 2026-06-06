@@ -1,8 +1,8 @@
 class Rslprompt < Formula
   desc "Fast, async zsh shell prompt"
   homepage "https://github.com/Rylan12/rslprompt"
-  url "https://github.com/Rylan12/rslprompt/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "6089bc192696cd02de280286bff73bf18248f0afd0875823517ba3a556ad1e09"
+  url "https://github.com/Rylan12/rslprompt/archive/refs/tags/v0.2.3.tar.gz"
+  sha256 "d6577f778971e15de3f61f6ade1f86dbe1091a21f29120a598198e1753091956"
   license "MIT"
 
   bottle do
@@ -18,6 +18,8 @@ class Rslprompt < Formula
   end
 
   test do
+    # Ensure this doesn't leak through from the caller's environment
+    ENV["PWD"] = testpath
     output = shell_output(bin/"rslprompt")
              .gsub(/\e\[[0-9;]*m/, "")
              .gsub(/%[{}]/, "")

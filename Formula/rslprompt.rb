@@ -18,7 +18,7 @@ class Rslprompt < Formula
   end
 
   test do
-    # Ensure this doesn't leak through from the caller's environment
+    # Override to ensure this doesn't leak through from the caller's environment
     ENV["PWD"] = testpath
     output = shell_output(bin/"rslprompt")
              .gsub(/\e\[[0-9;]*m/, "")
